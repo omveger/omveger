@@ -1,0 +1,55 @@
+baseURL = "https://omveger.github.io"
+languageCode = "en-us"
+title = "Omveger"
+theme = "anubis"
+paginate = 5
+
+
+[author]
+  name = "Stian Bergeland"
+
+[params]
+   author = "Stian Bergeland"
+   description = "En blogg."
+   dateFormat = "2006-01-02"
+   paginationSinglePost = true
+   style = "auto"
+   readMore = false
+
+   # utteranc.es support
+   utterancesRepo = ""  # mandatory
+   utterancesTheme = "" # optional
+   utterancesIssue = "" # optional
+   utterancesLabel = "" # optional
+
+[menu]
+
+  [[menu.main]]
+    identifier = "om"
+    name = "Om"
+    url = "/om/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[[menu.main]]
+    name = "Locombia 2017"
+    url = "/categories/locombia2017/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Alle innlegg"
+    identifier = "archive"
+    url = "/posts/"
+    weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
